@@ -14,7 +14,6 @@ class App extends Component {
 
     this.state = {
       backgroundColor: '#fcaa67',
-      gridGap: '.25em'
     }
   }
 
@@ -24,24 +23,14 @@ class App extends Component {
     });
   }
 
-  handleGapChange = () => {
-    const gap = this.state.gridGap === '.25em' ? '.5em' : '.25em';
-    this.setState({
-      gridGap: gap
-      })
-  }
-
   render() {
 
     const style = {
       main : {
-        height: '100%',
-        width: '100vw',
         display: 'grid',
         gridTemplateColumns: 'repeat(12, 1fr)',
-        gridGap: this.state.gridGap,
         backgroundColor: this.state.backgroundColor,
-        transition: 'background-color 1s ease-out'
+        transition: 'all 1s ease-out'
       },
     
     
@@ -49,47 +38,66 @@ class App extends Component {
     return (
       <div className='main' style={style.main}>
         {/* <Type /> */}
+        <Card
+         handleColorChange={this.handleColorChange}
+        handleGapChange={this.handleGapChange}
+        color='#1a535c'
+        cols="2/12"
+        class='project-1'
+        > <Type />
+        </Card>
         <Card 
         handleColorChange={this.handleColorChange}
         handleGapChange={this.handleGapChange}
         color='#1a535c'
-        cols="3/11"
+        cols="2/12"
+        class='project-1'
         />
         <Card 
         handleColorChange={this.handleColorChange}
         handleGapChange={this.handleGapChange}
         color='#4ecdc4'
-        cols='3/11'
+        cols='2/12'
+        class='project-2'
         />
         <Card 
         handleColorChange={this.handleColorChange}
         handleGapChange={this.handleGapChange}
         color='#ba2d0b'
-        cols='3/11'
+        cols='2/12'
+        class='project-3'
+
         />
          <Card 
         handleColorChange={this.handleColorChange}
         handleGapChange={this.handleGapChange}
         color='#1a535c'
-        cols="3/7"
+        cols="2/7"
+        class='project-4'
+
         />
         <Card 
         handleColorChange={this.handleColorChange}
         handleGapChange={this.handleGapChange}
         color='#4ecdc4'
-        cols='7/11'
+        cols='7/12'
+        class='project-5'
+
         />
         <Card 
         handleColorChange={this.handleColorChange}
         handleGapChange={this.handleGapChange}
         color='#ba2d0b'
-        cols='3/7'
+        cols='2/7'
+        class='project-6'
+
         />
          <Card 
         handleColorChange={this.handleColorChange}
         handleGapChange={this.handleGapChange}
         color='#ba2d0b'
-        cols='7/11'
+        cols='7/12'
+        class='project-7'
         />
       </div>
     );
