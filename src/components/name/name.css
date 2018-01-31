@@ -49,7 +49,7 @@
         font-size: .85em;
     }
     .fa-hand-o-down {
-        font-size: 3em;
+        display: none !important;
     }
 }
 
@@ -58,9 +58,6 @@
 
     .Typist {
         font-size: .7em;
-    }
-    .fa-hand-o-down {
-        font-size: 2em;
     }
 }
 
