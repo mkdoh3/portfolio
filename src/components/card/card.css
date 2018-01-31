@@ -2,6 +2,7 @@
     height: 344px;
     text-align: center;
     padding: .2em;
+    transition: 'all .5s ease-in-out';
 }
 
 .project-card h5 {

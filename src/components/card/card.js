@@ -73,7 +73,6 @@ class Card extends Component {
                 boxShadow: this.state.boxShadow,
                 margin: this.state.margin,
                 backgroundColor: this.state.backgroundColor,
-                transition: 'all .5s ease-in-out'
             }
         }
         return (

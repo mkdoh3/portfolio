@@ -17,7 +17,7 @@ class Nav extends Component {
         return (
             <FontAwesome
                 name='hand-o-down'
-                size='3x'
+                size='2x'
                 style= {this.state.hidden ? {display: 'none'} : {display:'initial'}}
                 onClick={this.props.onClick}
             />
