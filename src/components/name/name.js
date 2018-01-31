@@ -16,7 +16,7 @@ class Name extends Component {
                             style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.2)', color: '#58355e' }}
                         />
                      </a>
-                    <a href='www.linkedin.com/in/michaeldoh' target='_blank' rel="noopener noreferrer">
+                    <a href='https://www.linkedin.com/in/michaeldoh' target='_blank' rel="noopener noreferrer">
                         <FontAwesome 
                             name='linkedin'
                             style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.2)', color: '#58355e' }}
