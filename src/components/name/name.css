@@ -81,6 +81,7 @@
         font-size: .7em !important;
     }
     .fa-hand-o-down {
-        font-size: 1.5em !important
+        font-size: 1.5em !important;
+        margin-bottom: 1em;
     }
 }
