@@ -1,5 +1,5 @@
 # My Personal Portfolio Site
 <hr>
-#### http://michael-doherty.herokuapp.com/
+http://michael-doherty.herokuapp.com/
 <hr>
-##### Built With React.js
+Built With React.js
