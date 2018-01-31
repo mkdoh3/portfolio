@@ -83,7 +83,7 @@ class App extends Component {
           color='#f86624'
           cols='7/11'
           project='project7'/>
-          <p className='bottom-text'>Build using React with 
+          <p className='bottom-text'>Built using React with 
           <FontAwesome 
            name='heart'
           />
