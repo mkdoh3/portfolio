@@ -1,3 +1,82 @@
-.project-1 {
-    font-size: 4em;
+.project-card {
+    height: 344px;
+    text-align: center;
+    padding: .2em;
+}
+
+.project-card h5 {
+    font-size: .75em;
+    margin: 1.25em 0;
+}
+
+.project-card p {
+    font-size: .55em;
+    padding: .5em;
+}
+
+#project1 {
+    grid-column: 3/11
+}
+#project2 {
+    grid-column: 3/11
+}
+#project3 {
+    grid-column: 3/11
+}
+#project4 {
+    grid-column: 3/7
+}
+#project5 {
+    grid-column: 7/11
+}
+#project6 {
+    grid-column: 3/7
+}
+#project7 {
+    grid-column: 7/11
+}
+
+
+@media only screen and (max-width : 768px) {
+    .project-card p {
+        font-size: .45em;
+        padding: .35em;
+    }
+    .project-card h5 {
+        font-size: .6em;
+        margin: 1em 0;
+    }
+    .project-card {
+        height: 324px;
+        padding: .1em;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .project-card p {
+        font-size: .43em;
+    }
+    #project4 {
+        grid-column: 3/11
+    }
+    #project5 {
+        grid-column: 3/11
+    }
+    #project6 {
+        grid-column: 3/11
+    }
+    #project7 {
+        grid-column: 3/11
+    }
+}
+
+@media only screen and (max-width : 414px) {
+    .project-card p {
+        font-size: .4em;
+    }
+    .project-card h5 {
+        font-size: .55em;
+        margin: .75em 0;
+    }
+ 
 }

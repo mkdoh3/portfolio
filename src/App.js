@@ -1,19 +1,17 @@
-import React, { Component, Fragment } from 'react';
-import _ from 'lodash';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import scrollToComponent from 'react-scroll-to-component';
 
-
-import Type from './components/type/type';
 import Card from './components/card/card';
+import Name from './components/name/name';
 
+import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      backgroundColor: '#fcaa67',
+      backgroundColor: '#43bccd',
     }
   }
 
@@ -23,82 +21,65 @@ class App extends Component {
     });
   }
 
+  handleOnClick = () => {
+    console.log('hello');
+    scrollToComponent(this.refs.main)
+  }
+
   render() {
 
     const style = {
       main : {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(12, 1fr)',
-        backgroundColor: this.state.backgroundColor,
-        transition: 'all 1s ease-out'
-      },
-    
-    
+        backgroundColor: this.state.backgroundColor
+      }
     }
     return (
-      <div className='main' style={style.main}>
-        {/* <Type /> */}
+      <div className='main' ref='main' style={style.main}>
+        <Name 
+          onClick={this.handleOnClick.bind(this)}
+        />
         <Card
-         handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#1a535c'
-        cols="2/12"
-        class='project-1'
-        > <Type />
-        </Card>
+          handleColorChange={this.handleColorChange}
+          handleGapChange={this.handleGapChange}
+          color='#662e9b'
+          cols="3/11"
+          project='project1'/>
         <Card 
-        handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#1a535c'
-        cols="2/12"
-        class='project-1'
-        />
+          handleColorChange={this.handleColorChange}
+          handleGapChange={this.handleGapChange}
+          color='#ea3546'
+          cols="3/11"
+          project='project2'/>
         <Card 
-        handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#4ecdc4'
-        cols='2/12'
-        class='project-2'
-        />
-        <Card 
-        handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#ba2d0b'
-        cols='2/12'
-        class='project-3'
-
-        />
+          handleColorChange={this.handleColorChange}
+          handleGapChange={this.handleGapChange}
+          color='#f86624'
+          cols='3/11'
+          project='project3'/>
          <Card 
-        handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#1a535c'
-        cols="2/7"
-        class='project-4'
-
-        />
+          handleColorChange={this.handleColorChange}
+          handleGapChange={this.handleGapChange}
+          color='#f9c80e'
+          cols="3/7"
+          project='project4'/>
         <Card 
-        handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#4ecdc4'
-        cols='7/12'
-        class='project-5'
-
-        />
+          handleColorChange={this.handleColorChange}
+          handleGapChange={this.handleGapChange}
+          color='#662e9b'
+          cols='7/11'
+          project='project5'/>
         <Card 
-        handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#ba2d0b'
-        cols='2/7'
-        class='project-6'
-
-        />
+          handleColorChange={this.handleColorChange}
+          handleGapChange={this.handleGapChange}
+          color='#ea3546'
+          cols='3/7'
+          project='project6'/>
          <Card 
-        handleColorChange={this.handleColorChange}
-        handleGapChange={this.handleGapChange}
-        color='#ba2d0b'
-        cols='7/12'
-        class='project-7'
-        />
+          handleColorChange={this.handleColorChange}
+          handleGapChange={this.handleGapChange}
+          color='#f86624'
+          cols='7/11'
+          project='project7'/>
       </div>
     );
   }

@@ -1,0 +1,66 @@
+.name-wrapper {
+    grid-column: 1/13;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    background-color: #f6f7eb;
+    margin-bottom: 1em;
+}
+
+ .links {
+     grid-column: 1/3;
+     justify-self: center
+ }
+
+.fa {
+    margin: .5em;
+}
+
+ .Typist {
+    font-size: .95em;
+    grid-column: 1/3;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.027);
+ }
+
+ .Typist:hover {
+     cursor: default
+ }
+
+ .fa-hand-o-down {
+     grid-column: 1/3;
+     justify-self: center;
+     align-self: flex-end;
+     margin-bottom: .5em;
+     padding-right: .2em;
+
+ }
+
+ .fa-hand-o-down:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 640px) {
+    .Typist {
+        font-size: .85em;
+    }
+    .fa-hand-o-down {
+        font-size: 3em;
+    }
+}
+
+
+@media only screen and (max-width : 414px) {
+
+    .Typist {
+        font-size: .7em;
+    }
+    .fa-hand-o-down {
+        font-size: 2em;
+    }
+}
+
