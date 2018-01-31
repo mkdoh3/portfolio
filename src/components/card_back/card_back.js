@@ -22,7 +22,7 @@ const cardBacks = {
     },
     project3 :  {
         image: mocpMe, 
-        site: 'https://github.com/mocp-me/mocp_me',
+        site: '',
         github: 'https://github.com/mocp-me/mocp_me',
         tools: 'mySQL, Express, React, Node. Coming soon!'
     },
@@ -34,13 +34,13 @@ const cardBacks = {
     },
     project5 :  {
         image: '', 
-        site: 'https://github.com/mkdoh3/bamazon',
+        site: '',
         github: 'https://github.com/mkdoh3/bamazon',
         tools: 'Javascript, Node, Inquirer.'
     },
     project6 :  {
         image: '', 
-        site: 'https://github.com/mkdoh3/liri-node-app',
+        site: '',
         github: 'https://github.com/mkdoh3/liri-node-app',
         tools: 'Javascript, Node, Spotify API, Twitter API.'
     },
@@ -63,8 +63,8 @@ const cardBack = (props) => {
                 transitionEnterTimeout={2000}
                 transitionLeaveTimeout={2000}>
                 <div className='back-text'>
-                    <p>Site: <a href={site} target="_blank" rel="noopener noreferrer">Link</a> </p>
-                    <p>Repo: <a href={github} target="_blank" rel="noopener noreferrer">Link</a> </p>
+                    {site && <p>Site: <a href={site} target="_blank" rel="noopener noreferrer">Link</a></p>}
+                    <p>Repo: <a href={github} target="_blank" rel="noopener noreferrer">Link</a></p>
                     <p>Built with: {tools}</p>
                 </div>
             </ReactTransitionGroup>
