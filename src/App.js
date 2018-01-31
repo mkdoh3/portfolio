@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import scrollToComponent from 'react-scroll-to-component';
+import FontAwesome from 'react-fontawesome'
 
 import Card from './components/card/card';
 import Name from './components/name/name';
@@ -80,6 +81,11 @@ class App extends Component {
           color='#f86624'
           cols='7/11'
           project='project7'/>
+          <p className='bottom-text'>Build using React with 
+          <FontAwesome 
+           name='heart'
+          />
+          </p>
       </div>
     );
   }

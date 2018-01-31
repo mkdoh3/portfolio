@@ -6,7 +6,7 @@ import './card.css';
 const cardFronts = {
     project1 : {
         title: 'Care By Numbers',
-        text: 'Care by Numbers is a full-stack app that provides a detailed, data-driven look into the alarming healthcare cost disparity that exists from state to state and hospital to hospital',
+        text: 'Care by Numbers is a full-stack app that provides a detailed, data-driven look into the alarming healthcare cost disparity that exists from state to state and hospital to hospital.',
     },
     project2 :  {
         title: 'CTA Dash',
@@ -19,7 +19,7 @@ const cardFronts = {
     },
     project4 :  {
         title: 'CRUD Burgers',
-        text: 'Small full-stack project utilizing mySQL and Sequelize'
+        text: 'Small full-stack project utilizing mySQL and Sequelize.'
     },
     project5 :  {
         title: 'Better Amazon',
@@ -28,8 +28,6 @@ const cardFronts = {
     project6 :  {
         title: 'Liri',
         text: 'A "language interpreter" that lives in Node. Find music, read tweets, and more!',
-        link: 'www.com',
-        github: 'github'
     },
     project7 :  {
         title: 'Star Words',

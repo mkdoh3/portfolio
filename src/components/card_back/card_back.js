@@ -17,7 +17,7 @@ const cardBacks = {
         image: ctaDash,
         site: 'https://mkdoh3.github.io/CTA_Dash/login',
         github: 'https://github.com/mkdoh3/CTA_Dash',
-        tools: 'Javascript, Firebase, Bootstrap'
+        tools: 'Javascript, Firebase, Bootstrap.'
 
     },
     project3 :  {
@@ -30,25 +30,25 @@ const cardBacks = {
         image: '', 
         site: 'https://crud-burgers.herokuapp.com/',
         github: 'https://github.com/mkdoh3/burger-sequel',
-        tools: 'mySql, Sequelize, Node, Express, Bootstrap'
+        tools: 'mySql, Sequelize, Node, Express, Bootstrap.'
     },
     project5 :  {
         image: '', 
         site: 'https://github.com/mkdoh3/bamazon',
         github: 'https://github.com/mkdoh3/bamazon',
-        tools: 'Javascript, Node, Inquirer'
+        tools: 'Javascript, Node, Inquirer.'
     },
     project6 :  {
         image: '', 
         site: 'https://github.com/mkdoh3/liri-node-app',
         github: 'https://github.com/mkdoh3/liri-node-app',
-        tools: 'Javascript, Node, Spotify API, Twitter API'
+        tools: 'Javascript, Node, Spotify API, Twitter API.'
     },
     project7 :  {
         image: '', 
         site: 'https://mkdoh3.github.io/Hangman-Game/',
         github: 'https://github.com/mkdoh3/Hangman-Game',
-        tools: 'Javacript, JQuery, HTML, CSS'
+        tools: 'Javacript, JQuery, HTML, CSS.'
     }
 }
 
@@ -62,7 +62,7 @@ const cardBack = (props) => {
                 transitionAppearTimeout={2000}
                 transitionEnterTimeout={2000}
                 transitionLeaveTimeout={2000}>
-                <div>
+                <div className='back-text'>
                     <p>Site: <a href={site} target="_blank" rel="noopener noreferrer">Link</a> </p>
                     <p>Repo: <a href={github} target="_blank" rel="noopener noreferrer">Link</a> </p>
                     <p>Built with: {tools}</p>
