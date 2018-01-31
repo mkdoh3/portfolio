@@ -31,7 +31,7 @@ class Name extends Component {
                 </div>
                 <Type />
                 <Nav 
-                    wait={70}
+                    wait={6400}
                     onClick={this.props.onClick}
                 />
             </div>
