@@ -24,7 +24,7 @@ class App extends Component {
 
   handleOnClick = () => {
     scrollToComponent(this.refs.main, { 
-      offset: 550,
+      offset: 600,
       align: 'top'
     });
   }
@@ -45,43 +45,36 @@ class App extends Component {
           handleColorChange={this.handleColorChange}
           handleGapChange={this.handleGapChange}
           color='#662e9b'
-          cols="3/11"
           project='project1'/>
         <Card 
           handleColorChange={this.handleColorChange}
           handleGapChange={this.handleGapChange}
           color='#ea3546'
-          cols="3/11"
           project='project2'/>
         <Card 
           handleColorChange={this.handleColorChange}
           handleGapChange={this.handleGapChange}
           color='#f86624'
-          cols='3/11'
           project='project3'/>
          <Card 
           handleColorChange={this.handleColorChange}
           handleGapChange={this.handleGapChange}
           color='#f9c80e'
-          cols="3/7"
           project='project4'/>
         <Card 
           handleColorChange={this.handleColorChange}
           handleGapChange={this.handleGapChange}
           color='#662e9b'
-          cols='7/11'
           project='project5'/>
         <Card 
           handleColorChange={this.handleColorChange}
           handleGapChange={this.handleGapChange}
           color='#ea3546'
-          cols='3/7'
           project='project6'/>
          <Card 
           handleColorChange={this.handleColorChange}
           handleGapChange={this.handleGapChange}
           color='#f86624'
-          cols='7/11'
           project='project7'/>
           <p className='bottom-text'>Built using React with 
           <FontAwesome 
