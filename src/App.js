@@ -24,7 +24,7 @@ class App extends Component {
 
   handleOnClick = () => {
     scrollToComponent(this.refs.main, { 
-      offset: 450,
+      offset: 550,
       align: 'top'
     });
   }
