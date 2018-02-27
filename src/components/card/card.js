@@ -5,16 +5,18 @@ import './card.css';
 
 const cardFronts = {
     project1 : {
-        title: 'Care By Numbers',
-        text: 'Care by Numbers is a full-stack app that provides a detailed, data-driven look into the alarming healthcare cost disparity that exists from state to state and hospital to hospital.',
+       
+        title: 'MoCP.me',
+        text: 'The MoCP.me app uses computer vision as a way to interact with the Museum of Contemporary Photography (MoCP) collection on user-generated terms. Public release coming soon! '
     },
     project2 :  {
-        title: 'CTA Dash',
-        text: 'CTA-Dash is a client-side application that allows users to store and track their Chicago bus routes, local weather, and news on a sleek dashboard style interface.'
+        title: 'Care By Numbers',
+        text: 'Care by Numbers is a full-stack app that provides a detailed, data-driven look into the alarming healthcare cost disparity that exists from state to state and hospital to hospital.',
+       
     },
     project3 :  {
-        title: 'MoCP.me',
-        text: 'The MoCP.me app uses computer vision as a way to interact with the Museum of Contemporary Photography (MoCP) collection on user-generated terms. V2 coming soon! '
+        title: 'CTA Dash',
+        text: 'CTA-Dash is a client-side application that allows users to store and track their Chicago bus routes, local weather, and news on a sleek dashboard style interface.'
 
     },
     project4 :  {
@@ -49,6 +51,8 @@ class Card extends Component {
 
     handleOnMouseOver = () => {
         this.setState({
+            transition: 'all .35s ease-in-out',
+            padding: '2em',
             backgroundColor:  '#f7fff7',
             margin: '.05em',
             boxShadow: '3px 2px 8px 4px rgba(0, 0, 0, 0.4)',
@@ -73,6 +77,8 @@ class Card extends Component {
                 boxShadow: this.state.boxShadow,
                 margin: this.state.margin,
                 backgroundColor: this.state.backgroundColor,
+                transition: this.state.transition
+                
             }
         }
         return (

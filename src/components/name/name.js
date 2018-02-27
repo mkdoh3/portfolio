@@ -22,7 +22,7 @@ class Name extends Component {
                             style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.2)', color: '#58355e' }}
                         />
                     </a>
-                    <a href='https://drive.google.com/open?id=11ElefZO_ouY4sdAkEG0IIjCuWnI2O7F8' target='_blank' rel="noopener noreferrer">
+                    <a href='https://drive.google.com/open?id=0B6_aj87Cs62-NFNwZmhqME50aDRfZlNNTG9BRUNjNGRvcS04' target='_blank' rel="noopener noreferrer">
                         <FontAwesome 
                             name='file-text-o'
                             style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.2)', color: '#58355e' }}

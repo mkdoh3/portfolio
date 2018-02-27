@@ -8,23 +8,25 @@ import mocpMe from '../../assets/images/mocpme.png';
 
 const cardBacks = {
     project1 : {
+    
+        image: mocpMe, 
+        site: 'https://mocp-me.herokuapp.com',
+        github: 'https://github.com/mocp-me/mocp_me',
+        tools: 'mySQL, Express, React, Node'
+    },
+    project2 :  {
         image: careBy, 
         site: 'https://care-by-numbers.herokuapp.com',
         github: 'https://github.com/mkdoh3/care-by-numbers',
         tools: 'Javascript, Node, Express, mySQL, CSS Grid'
+     
+
     },
-    project2 :  {
+    project3 :  {
         image: ctaDash,
         site: 'https://mkdoh3.github.io/CTA_Dash/login',
         github: 'https://github.com/mkdoh3/CTA_Dash',
         tools: 'Javascript, Firebase, Bootstrap.'
-
-    },
-    project3 :  {
-        image: mocpMe, 
-        site: '',
-        github: 'https://github.com/mocp-me/mocp_me',
-        tools: 'mySQL, Express, React, Node. Coming soon!'
     },
     project4 :  {
         image: '', 
